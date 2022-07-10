@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Oleo+Script:wght@400;700&family=Updock&family=Water+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Oleo+Script:wght@400;700&family=Tapestry&family=Updock&family=Water+Brush&display=swap");
+
+.project {
+  text-align: center;
+  font-weight: bold;
+}
+
+.title {
+  font-family: "Oleo Script";
+  font-size: 42px;
+  word-spacing: 20px;
+  margin-top: 0px;
+}
+
+.description {
+  font-family: "Oleo Script";
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: nav;
+}
+
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: cart;
+  font-family: Tapestry;
+  font-weight: 600;
+  position: relative;
+}
+.item5 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav main cart"
+    "footer footer footer";
+  grid-template-columns: 200px 1fr 200px;
+  gap: 5px;
+  background-color: #9ec8eb;
+  padding: 5px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 18px;
+}
+
+.kitchen-photo {
+  width: 100%;
+}
+
+.advertisement {
+  padding-top: 50px;
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(8, 223, 238);
+  font-weight: bold;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMyewEjWNV_5w3A3ZuwKWLEAcUvxTeQ5vb0nUZwCInPfafQwKvGkg7hmwFFmG_3WGZyyQ&usqp=CAU");
+  height: 100px;
+  text-align: center;
+}
+.advantages {
+  width: 510px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+}
+.advantages-list {
+  padding: 0;
+  list-style: none;
+}
+.advantages-item {
+  margin-bottom: 15px;
+  padding-left: 140px;
+  border-left: 20px solid #af670f;
+  color: #704612;
+  text-align: start;
+}
+.h2-border {
+  border-top: 1px solid rgb(15, 14, 14);
+}
+.site-footer {
+  min-width: 550px;
+  background-color: #847462;
+  color: #ffffff;
+}
+
+.site-footer .container {
+  text-align: center;
+}
+
+.site-footer p {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 20px;
+}
+
+.food {
+  width: 100px;
+}
+.drink {
+  width: 100px;
+}
+.cloth {
+  width: 100px;
+}
+.sport {
+  width: 100px;
+}
+.plant {
+  width: 100px;
+}
+.cart {
+  width: 50px;
+  opacity: 0.6;
+}
+.cart-text {
+  font-size: 23px;
+}
+.home {
+  width: 50px;
+  position: relative;
+  display: flow-root;
+}
+.food-group {
+  width: 100px;
+  padding-left: 50px;
+  display: flex;
+}
+.food-category {
+  width: 100px;
+  border: 3px solid rgb(34, 213, 245);
+  padding: 30px;
+  margin: 50px;
+  display: inline-block;
+}
+.svg {
+  padding-top: 20px;
+  border-top: 1px solid rgb(70, 48, 48);
+}
+
+.navbar li {
+  list-style: none;
+  margin-bottom: 10px;
+  padding-right: 30px;
+  padding-top: 20px;
+}
+
+.links {
+  text-decoration: none;
+  font-family: Tapestry;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.category-title {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: Tapestry;
+}
+
+.meat-component {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: Tapestry;
+}
+.food-blog {
+  padding-left: 50px;
+  padding-top: 10px;
+}
+.food-description {
+  width: 150px;
+}
+.grid-container .food-blog {
+  text-align: start;
+  position: relative;
+  display: flex;
+}
+.text-food p {
+  text-align: left;
+  padding-left: 30px;
+}
+
+.cart-button {
+  background-color: rgb(175, 247, 243);
+  font-size: 20px;
+  font-family: Tapestry;
+  border: none;
+  cursor: pointer;
+}
+.cart-button:active {
+  background-color: rgb(175, 247, 243);
+  font-size: 19.5px;
+  font-family: Tapestry;
+  border: none;
+  cursor: pointer;
+}
+
+.arrowLeft {
+  width: 40px;
+  margin-left: 20px;
+  text-align: start;
+  display: flex;
+}
+
+/* Cart */
+.resetCart {
+  background-color: rgb(86, 209, 240);
+  margin: 20px 25px;
+  user-select: none;
+}
+.resetCart:active {
+  background-color: rgb(86, 209, 240);
+  margin: 22px 27px;
+}
+
+.cart-food {
+  width: 20px;
+  margin-left: 0;
+}
+.discount {
+  padding-top: 30px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: baseline;
+}
+
+.discount input {
+  text-align: center;
+  opacity: 0.3;
+}
+.discount input:hover {
+  opacity: 1;
+}
+
+.fire-work {
+  width: 180px;
+  display: block;
+  padding-top: 20px;
+}
+
+.cart-choise {
+  user-select: none;
+}
